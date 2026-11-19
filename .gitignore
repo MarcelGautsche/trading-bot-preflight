@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Credentials and local state: never commit them (checklist item 1)
+.env
+.env.*
+!.env.example
+*.kill
+*.tmp
+
+# macOS
+.DS_Store

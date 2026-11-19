@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trading-bot-preflight"
+dynamic = ["version"]
+description = "Pre-live checklist and small, broker-agnostic guard rails for Python trading bots."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.9"
+authors = [{ name = "Marcel Gautsche" }]
+dependencies = []
+
+[project.urls]
+"Code review" = "https://marcelgautsche.de/en/trading-system-code-review.html"
+
+[tool.setuptools]
+packages = ["preflight"]
+
+[tool.setuptools.dynamic]
+version = { attr = "preflight.__version__" }
